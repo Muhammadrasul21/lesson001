@@ -1,3 +1,7 @@
+.feature {
+    margin-bottom: 50px;
+}
+
 .feature__cards {
     display: flex;
     justify-content: space-between;
