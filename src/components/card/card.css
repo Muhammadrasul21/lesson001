@@ -1,3 +1,6 @@
+.card{
+    margin-bottom: 50px;
+}
 .card__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
