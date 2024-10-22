@@ -1,0 +1,15 @@
+.category__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category__wrapper li a {
+    font-size: 14px;
+    opacity: .8;
+    font-family: 'Lora';
+    transition: color 0.3s ease;
+}
+
+.category__wrapper li a:hover {
+    color: #dd783f;
+}
