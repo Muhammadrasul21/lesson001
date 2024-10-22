@@ -1,0 +1,42 @@
+.card__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+
+.card__item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.card__desc {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.card__desc span {
+    font-family: 'Lora';
+    margin-bottom: 6px;
+}
+
+.card__desc p {
+    font-family: 'Oxygen';
+    opacity: .7;
+    margin-bottom: 33px;
+}
+
+.card__user {
+    display: flex;
+    width: 296px;
+    height: 48px;
+    border-top: 1px solid gray;
+    padding: 11px 2px;
+    justify-content: space-between;
+}
+
+.card__logo {
+    display: flex;
+    gap: 10px;
+}

@@ -1,6 +1,7 @@
 .category__wrapper {
     display: flex;
     justify-content: space-between;
+    margin-top: 18px;
 }
 
 .category__wrapper li a {
