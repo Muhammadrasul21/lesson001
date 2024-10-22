@@ -1,0 +1,58 @@
+.footer {
+    background-image: url(../assets/footerbg.png);
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.footer__wrapper {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__input {
+    display: flex;
+    align-items: center;
+}
+
+.footer__input input {
+    width: 375px;
+    height: 50px;
+    padding: 18px 35px;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    outline: none;
+}
+
+.footer__input button {
+    width: 125px;
+    height: 50px;
+    padding: 18px 44px;
+    background: inherit;
+    border: none;
+    color: #fff;
+    border-radius: 0px 4px 4px 0px;
+    background: #ffffff51;
+}
+
+.footer__input button:hover {
+    background: #fff;
+    color: #000;
+    outline: none;
+}
+
+.footer__info {
+    width: 100%;
+    display: flex;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;
+    background: #0000004b;
+    height: 90px;
+    padding: 20px;
+    color: #fff;
+}
