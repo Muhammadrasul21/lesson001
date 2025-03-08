@@ -1,4 +1,4 @@
-import Recipe from "../page";
+import Recipe from "@/components/Recipe";
 
 async function getRecipes() {
   const res = await fetch("https://dummyjson.com/recipes");
