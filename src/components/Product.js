@@ -1,6 +1,9 @@
+"use client"
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Product = ({ product }) => {
+  const router = useRouter()
   return (
     <div
       className="p-5 flex flex-col items-center font-semibold text-lg shadow-lg border 
@@ -8,6 +11,7 @@ const Product = ({ product }) => {
     >
       <div className="overflow-hidden rounded-lg">
         <Image
+        onClick={()=>router.push(`/products/${product.id}`)}
           src={product.thumbnail}
           alt={product.title}
           width={200}
