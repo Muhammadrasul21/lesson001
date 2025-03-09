@@ -28,7 +28,7 @@ const DashboardLayout = ({ children }) => {
         </div>
         <Link
           href={"/"}
-          className="mt-auto bg-white text-sky-950 py-2 px-4 rounded-lg text-center font-semibold hover:bg-gray-200 transition"
+          className="mt-auto bg-white text-sky-950 py-2 px-4 mb-2 rounded-lg text-center font-semibold hover:bg-gray-200 transition"
         >
           Home
         </Link>

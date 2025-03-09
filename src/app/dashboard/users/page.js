@@ -6,7 +6,7 @@ const UsersPage = async () => {
   const users = await getUsers();
 
   return (
-    <div className="p-6 flex flex-col items-center gap-6">
+    <div className=" p-6 flex flex-col items-center gap-6">
       <p className="my-4 font-bold text-3xl text-cyan-500">Users</p>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-full">
         {users?.map((user) => (
