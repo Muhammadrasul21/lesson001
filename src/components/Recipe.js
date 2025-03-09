@@ -2,7 +2,8 @@ import Image from "next/image";
 
 const Recipe = ({ recipe }) => {
   const maxIngredients = 5;
-  const displayedIngredients = recipe.ingredients?.slice(0, maxIngredients) || [];
+  const displayedIngredients =
+    recipe.ingredients?.slice(0, maxIngredients) || [];
   const hasMoreIngredients = recipe.ingredients?.length > maxIngredients;
 
   return (
@@ -21,11 +22,15 @@ const Recipe = ({ recipe }) => {
         <p className="text-gray-400 text-sm">🍽 Cuisine: {recipe.cuisine}</p>
         <div className="flex justify-between mt-2 text-sm text-gray-400">
           <p>🔥 Calories: {recipe.caloriesPerServing}</p>
-          <p>⭐ {recipe.rating} ({recipe.reviewCount} reviews)</p>
+          <p>
+            ⭐ {recipe.rating} ({recipe.reviewCount} reviews)
+          </p>
         </div>
         {displayedIngredients.length > 0 && (
           <div className="mt-4">
-            <h4 className="text-md font-semibold text-cyan-400">🛒 Ingredients:</h4>
+            <h4 className="text-md font-semibold text-cyan-400">
+              🛒 Ingredients:
+            </h4>
             <ul className="list-disc list-inside text-sm text-gray-400">
               {displayedIngredients.map((item, index) => (
                 <li key={index}>{item}</li>
