@@ -19,7 +19,7 @@ const Recipe = ({ recipe }) => {
       </div>
       <div className="p-4">
         <h3 className="text-xl font-bold text-cyan-400">{recipe.name}</h3>
-        <p className="text-gray-400 text-sm">🍽 Cuisine: {recipe.cuisine}</p>
+        <p className="text-gray-400 text-sm"> Cuisine: {recipe.cuisine}</p>
         <div className="flex justify-between mt-2 text-sm text-gray-400">
           <p>🔥 Calories: {recipe.caloriesPerServing}</p>
           <p>
