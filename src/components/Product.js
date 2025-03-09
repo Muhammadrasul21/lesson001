@@ -16,6 +16,7 @@ const Product = ({ product }) => {
           alt={product.title}
           width={200}
           height={200}
+          priority 
           className="rounded-lg object-cover hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
         />
       </div>
