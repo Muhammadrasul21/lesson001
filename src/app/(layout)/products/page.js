@@ -5,7 +5,7 @@ const ProductsPage = async () => {
   const { products } = await getProducts();
 
   return (
-    <div className="grid container mx-auto lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-5">
+    <div className="grid container mx-auto lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-5 pb-10">
       {products.map((product) => (
         <Product key={product.id} product={product} />
       ))}

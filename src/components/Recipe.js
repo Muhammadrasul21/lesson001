@@ -1,10 +1,14 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Recipe = ({ recipe }) => {
   const maxIngredients = 5;
   const displayedIngredients =
     recipe.ingredients?.slice(0, maxIngredients) || [];
   const hasMoreIngredients = recipe.ingredients?.length > maxIngredients;
+
+  const router = useRouter();
 
   return (
     <div className="p-5 bg-[#000] text-white shadow-lg border border-gray-900 rounded-lg hover:shadow-xl transition duration-300 ease-in-out max-w-md">
@@ -39,7 +43,7 @@ const Recipe = ({ recipe }) => {
             </ul>
           </div>
         )}
-        <button className="mt-4 bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-md text-sm font-medium transition w-full hover:scale-105">
+        <button onClick={() => router.push(`/recipes/${recipe.id}`)} className="mt-4 bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-md text-sm font-medium transition w-full hover:scale-105 cursor-pointer">
           View Recipe
         </button>
       </div>

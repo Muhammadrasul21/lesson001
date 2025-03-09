@@ -5,7 +5,7 @@ const RecipesPage = async () => {
   const { recipes } = await getRecipes();
 
   return (
-    <div className="container mx-auto p-5">
+    <div className="container mx-auto p-5 mb-4">
       <h1 className="text-3xl font-bold text-center text-cyan-400 mb-6">
         Recipes
       </h1>

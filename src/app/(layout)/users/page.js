@@ -5,7 +5,7 @@ const UsersPage = async () => {
   const { users } = await getUser();
 
   return (
-    <div className="grid container mx-auto lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+    <div className="grid container mx-auto lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 pb-6">
       {users.map((user) => (
         <User key={user.id} user={user} />
       ))}
